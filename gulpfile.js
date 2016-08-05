@@ -5,7 +5,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var pugLint = require('gulp-pug-lint'); //check the code quality of the view template
 var jsHint = require('gulp-jshint'); //check the code quality of js
 var jsLint = require('gulp-jslint');
-var scssLint = require('gulp-scss-lint');
+var scssLint = require('gulp-sass-lint');
 
 var uglify = require('gulp-uglify'); //compress js
 var pump = require('pump'); //for uglify module

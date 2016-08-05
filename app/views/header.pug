@@ -1,0 +1,11 @@
+#header.roundCorner
+	nav#menu
+		mixin putMenuItem(name, link)
+			li.menuItem.roundCorner 
+				if name=='Home'
+					a(href='Index.html')= name	
+				else
+					a(href=link+'.html')= name		
+		ul
+			each menuItem in ['Home', 'Contact', 'About']
+				+putMenuItem(menuItem, menuItem)

@@ -1,0 +1,5 @@
+body{font-size:15px}#wraper{width:80%;min-height:100%;margin:auto}#header{background-color:#123456;min-height:70px}
+#contain{background-color:#876543;min-height:100px;margin:auto}#footer{background-color:#019283;margin-top:-30px;margin-left:auto;margin-right:auto;width:80%;clear:both;height:30px;position:relative}
+#footer p{margin:5px}#menu ul{padding:5px}#menu ul li.menuItem{padding:5px;background-color:#8f4;display:inline-block;min-width:70px;text-align:center}
+#menu ul li.menuItem a{text-decoration:none;color:#17f}#menu ul li.menuItem:hover{font-weight:bold;cursor:pointer}
+.roundCorner{border-radius:7px}.clear{clear:both}

@@ -1,0 +1,22 @@
+doctype html
+html(lang="en")
+  head
+    title= 'Pug Example'
+    script(type='text/javascript').
+          
+    script(type='text/javascript', src='../js/lib/jquery/jquery-3.1.0.min.js')
+    script(type='text/javascript', src='../js/master.js')
+    
+    link(href='../css/reset.css'
+         rel='stylesheet'
+         type='text/css')/
+
+    link(href='../css/master.css'
+         rel='stylesheet'
+         type='text/css')/
+  body
+    #wraper
+        block header
+        block contain
+    block footer
+    div.clear

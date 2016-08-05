@@ -1,0 +1,23 @@
+@font-face {
+  font-family: myRobotoo;
+  src: url(../../app/fonts/Roboto-Black.ttf);
+  font-weight: bold; }
+
+@font-face {
+  font-family: myRobotoo;
+  src: url(../../app/fonts/Roboto-Italic.ttf);
+  font-style: italic; }
+
+@font-face {
+  font-family: myRobotoo;
+  src: url(../../app/fonts/Roboto-Regular.ttf); }
+
+html body {
+  font-family: myRobotoo, Helvetica;
+  color: #333333; }
+  html body p {
+    margin: 0;
+    padding: 0; }
+
+ul {
+  list-style-type: none; }
