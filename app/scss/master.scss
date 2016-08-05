@@ -1,62 +1,62 @@
 body{	
 	font-size: 15px;
+	background-color: #EEE;
 }
 #wraper{
-    width: 80%;        
-    min-height: 100%;    		
+    width: 80%;            
     margin: auto;
 }
 #header
-{    
-    background-color: #123456;
-    min-height: 70px;    
+{           
 }
 
 #contain
 {    
-    background-color: #876543;    
-    min-height:100px;
-    margin: auto;    
+    background-color: #876543;            
 }
-
-#footer
-{    
-    background-color: #019283;    
-    margin-top: -30px;
-    margin-left: auto;
-    margin-right: auto;    
-    width: 80%;
-    clear: both;
-	height: 30px;
-	p{
-		margin: 5px;
-	}
-	position: relative;
+footer{
+	margin-top: 5px;
 }
-#menu{	    
-    ul{
-    	padding: 5px;
-	    li.menuItem{
-	        padding: 5px;
-	        background-color: #88FF44;
-	        display:inline-block;        
-	        a{
-	        	text-decoration: none;
-	        	color: #1177FF;
-	        }
-	        min-width:70px;
-	        text-align: center;
-	    }
-	    li.menuItem:hover{
-	    	font-weight: bold;
-	    	cursor: pointer;    	
-	    }
-	}
-}
-
 .roundCorner{
 	border-radius: 7px;
 }
 .clear{
 	clear: both;
+}
+
+.navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      }
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+/* Set gray background color and 100% height */
+.sidenav {
+padding-top: 20px;
+background-color: #f1f1f1;
+height: 100%;
+}
+/* Set black background color, white text and some padding */
+footer {
+background-color: #555;
+color: white;
+padding: 15px;
+}
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+.sidenav {
+height: auto;
+padding: 15px;
+}
+.row.content {height:auto;}
+}
+.menuItem{
+	position: relative;	
+}
+.subMenu{
+	display:none;	
+	position: relative;
+}
+.menuItem:hover .subMenu{
+	display:block;	
 }

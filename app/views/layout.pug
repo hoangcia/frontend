@@ -1,12 +1,11 @@
 doctype html
 html(lang="en")
   head
-    title= 'Pug Example'
-    script(type='text/javascript').
-          
-    script(type='text/javascript', src='../js/lib/jquery/jquery-3.1.0.min.js')
-    script(type='text/javascript', src='../js/master.js')
-    
+    meta(charset='utf-8')/
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    block pageTitle        
+
     link(href='../css/reset.css'
          rel='stylesheet'
          type='text/css')/
@@ -14,9 +13,17 @@ html(lang="en")
     link(href='../css/master.css'
          rel='stylesheet'
          type='text/css')/
+
+    link(href='../css/bootstrap/css/bootstrap.min.css'
+         rel='stylesheet'
+         type='text/css')/
+
+    block userScripts
   body
     #wraper
         block header
         block contain
-    block footer
+        block footer
     div.clear
+
+    block script

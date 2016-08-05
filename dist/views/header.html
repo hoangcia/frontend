@@ -1,13 +1,35 @@
 
-<div class="roundCorner" id="header">
-  <nav id="menu">
-    <ul>
-          <li class="menuItem roundCorner"> <a href="Index.html">Home</a>
-          </li>
-          <li class="menuItem roundCorner"> <a href="Contact.html">Contact</a>
-          </li>
-          <li class="menuItem roundCorner"> <a href="About.html">About</a>
-          </li>
-    </ul>
-  </nav>
-</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#horizontalNavBar"></button><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span><a class="navbar-brand" href="#"><img src="../images/logo.png" alt="Logo" width="32" height="32"/></a>
+    </div>
+    <div class="collapse navbar-collapse" id="horizontalNavBar">        
+      <ul class="nav navbar-nav">
+              <li class="menuItem"><a href="Index.html">Home</a>
+              </li>
+              <li class="menuItem"><a href="#">Catalog</a>
+                <ul class="subMenu">
+                        <li class="menuItem"><a href="Wedding.html">Wedding</a>
+                        </li>
+                        <li class="menuItem"><a href="Birthday.html">Birthday</a>
+                        </li>
+                </ul>
+              </li>
+              <li class="menuItem"><a href="Contact.html">Contact</a>
+              </li>
+              <li class="menuItem"><a href="#">About</a>
+                <ul class="subMenu">
+                        <li class="menuItem"><a href="Career.html">Career</a>
+                        </li>
+                        <li class="menuItem"><a href="About us.html">About us</a>
+                        </li>
+                </ul>
+              </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"> Login					</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

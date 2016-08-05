@@ -1,12 +1,35 @@
-#header.roundCorner
-	nav#menu.nav.navbar.navbar-inverse.navbar-static-top
-		div.container-fluid
-			mixin putMenuItem(name, link)
-				li
-					if name=='Home'
-						a(href='Index.html')= name	
-					else
-						a(href=link+'.html')= name		
-			ul.breadcrumb
-				each menuItem in ['Home', 'Contact', 'About']
-					+putMenuItem(menuItem, menuItem)
+- var menus = ['Home',{'text':'Catalog','items':['Wedding', 'Birthday']},'Contact',{'text':'About','items':['Career','About us']}];
+
+nav.navbar.navbar-inverse
+		.container-fluid
+			.navbar-header
+				button.navbar-toggle(type='button', data-toggle='collapse', data-target='#horizontalNavBar')
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+				a.navbar-brand(href='#')
+					img(src='../images/logo.png', alt='Logo', width='32', height='32')
+			#horizontalNavBar.collapse.navbar-collapse         
+				mixin putMenuItem(menuItem, link)
+					li.menuItem
+						if (menuItem=='Home')
+							a(href='Index.html')= menuItem	
+						else
+							if (typeof menuItem === 'object')
+								a(href='#')= menuItem.text
+								ul.subMenu
+									each item in menuItem.items
+										+putMenuItem(item,item)
+							else
+								if (typeof menuItem === 'string')
+									a(href=link+'.html')= menuItem
+
+				ul.nav.navbar-nav
+					each menuItem in menus
+						+putMenuItem(menuItem, menuItem)
+
+				ul.nav.navbar-nav.navbar-right
+					li
+						a(href='#')
+							span.glyphicon.glyphicon-log-in
+								|  Login					
