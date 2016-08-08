@@ -47,11 +47,20 @@ footer {
     height: auto; } }
 
 .menuItem {
-  position: relative; }
+  position: relative;
+  z-index: 999; }
 
 .subMenu {
   display: none;
-  position: relative; }
+  position: absolute;
+  background-color: #222222;
+  z-index: 1000;
+  padding: 0; }
+  .subMenu li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #CCCCCC; }
+    .subMenu li a {
+      color: #AAAAAA; }
 
 .menuItem:hover .subMenu {
   display: block; }

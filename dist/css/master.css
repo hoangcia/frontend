@@ -1,5 +1,6 @@
 body{font-size:15px;background-color:#EEE}#wraper{width:80%;margin:auto}#contain{background-color:#876543}
 footer{margin-top:5px}.roundCorner{border-radius:7px}.clear{clear:both}.navbar{margin-bottom:0;border-radius:0}
 .row.content{height:450px}.sidenav{padding-top:20px;background-color:#f1f1f1;height:100%}footer{background-color:#555;color:white;padding:15px}
-@media screen and (max-width:767px){.sidenav{height:auto;padding:15px}.row.content{height:auto}}.menuItem{position:relative}
-.subMenu{display:none;position:relative}.menuItem:hover .subMenu{display:block}
+@media screen and (max-width:767px){.sidenav{height:auto;padding:15px}.row.content{height:auto}}.menuItem{position:relative;z-index:999}
+.subMenu{display:none;position:absolute;background-color:#222;z-index:1000;padding:0}.subMenu li{padding:5px 10px;border-bottom:1px solid #ccc}
+.subMenu li a{color:#aaa}.menuItem:hover .subMenu{display:block}

@@ -53,13 +53,17 @@ gulp.task('runSass', function(){
 
 //Build HTML files
 gulp.task('runPug', function(){
-    return gulp.src('app/views/*.pug')
-    .pipe(pugLint())
-    .pipe(pug({pretty:true}))
-    .pipe(gulp.dest('dist/views'))
-    .pipe(browser_sync.reload({
-        stream: true
-    }));
+    var pugFiles = ['index', 'about us', 'contact'];
+
+    pugFiles.forEach(function(fileName, index){
+        gulp.src('app/views/'+fileName+'.pug')
+        .pipe(pugLint())
+        .pipe(pug({pretty:true}))
+        .pipe(gulp.dest('dist/views'))
+        .pipe(browser_sync.reload({
+            stream: true
+        }));
+    });
 });
 //Build Javascript files
 gulp.task('runJs', function(){

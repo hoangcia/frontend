@@ -52,10 +52,21 @@ padding: 15px;
 }
 .menuItem{
 	position: relative;	
+	z-index: 999;
 }
 .subMenu{
 	display:none;	
-	position: relative;
+	position: absolute;
+	background-color: #222222;
+	z-index: 1000;
+	padding: 0;	
+	li{
+		a{
+			color: #AAAAAA;	
+		}		
+		padding: 5px 10px;
+		border-bottom: 1px solid #CCCCCC;
+	}
 }
 .menuItem:hover .subMenu{
 	display:block;	
