@@ -55,12 +55,21 @@ footer {
   position: absolute;
   background-color: #222222;
   z-index: 1000;
-  padding: 0; }
+  padding: 0;
+  width: 100px; }
   .subMenu li {
     padding: 5px 10px;
-    border-bottom: 1px solid #CCCCCC; }
+    border-bottom: 1px solid #CCCCCC;
+    width: 100%; }
     .subMenu li a {
       color: #AAAAAA; }
+  .subMenu li:hover {
+    background-color: #CCCCCC; }
+    .subMenu li:hover a {
+      color: #333333; }
 
-.menuItem:hover .subMenu {
+.menuItem:hover > .subMenu {
+  display: block; }
+
+.subMenuItem:hover > .subMenu {
   display: block; }

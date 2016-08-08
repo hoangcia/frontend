@@ -52,6 +52,7 @@ gulp.task('runSass', function(){
 });
 
 //Build HTML files
+//Index, About, Contact
 gulp.task('runPug', function(){
     var pugFiles = ['index', 'about us', 'contact'];
 

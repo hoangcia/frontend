@@ -60,14 +60,25 @@ padding: 15px;
 	background-color: #222222;
 	z-index: 1000;
 	padding: 0;	
+	width: 100px;
 	li{
 		a{
 			color: #AAAAAA;	
 		}		
 		padding: 5px 10px;
 		border-bottom: 1px solid #CCCCCC;
+		width: 100%;
+	}
+	li:hover{
+		background-color: #CCCCCC;
+		a{
+			color: #333333;
+		}
 	}
 }
-.menuItem:hover .subMenu{
+.menuItem:hover > .subMenu{
 	display:block;	
+}
+.subMenuItem:hover > .subMenu{
+	display:block;
 }
